@@ -1,0 +1,46 @@
+{
+  "priceCardsData": [
+    {
+      "price": "$300",
+      "subtitle": "Special first packet",
+      "title": "Standard",
+      "features": [
+        "15 video lecture",
+        "Access to a shared chat",
+        "Access to materials for 3 months",
+        "Certificate completion"
+      ]
+    },
+    {
+      "price": "$500",
+      "subtitle": "Special second packet",
+      "title": "Advanced",
+      "features": [
+        "15 video lecture",
+        "Access to a shared chat",
+        "Access to materials for 3 months",
+        "Certificate completion",
+        "+3 video on how to get a cool order fast",
+        "+2 videos on how to work with clients",
+        "+1 personal call with me"
+      ]
+    },
+    {
+      "price": "$1000",
+      "subtitle": "Special third packet",
+      "title": "Standard",
+      "features": [
+        "15 video lecture",
+        "Access to a shared chat",
+        "Access to materials for 3 months",
+        "Certificate completion",
+        "+3 video on how to get a cool order fast",
+        "+2 videos on how to work with clients",
+        "+1 personal call with me",
+        "+Mentoring support",
+        "+Checking homework",
+        "+15 pre made projects"
+      ]
+    }
+  ]
+}
