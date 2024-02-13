@@ -1,0 +1,22 @@
+$card-primary-color: #181818;
+
+.skill-group {
+  display: flex;
+  margin: auto;
+  > svg:nth-child(1) {
+    transform: translate(110px);
+    z-index: 2;
+  }
+  > svg:nth-child(2) {
+    transform: translateY(50px);
+  }
+  > svg:nth-child(3) {
+    transform: translate(-80px);
+  }
+
+  // > div {
+  //   width: 350px;
+  //   height: 80px;
+  //   background-color: $card-primary-color;
+  // }
+}

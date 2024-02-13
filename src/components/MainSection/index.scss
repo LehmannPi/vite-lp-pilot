@@ -1,0 +1,74 @@
+$font-stack: Montserrat, system-ui;
+$primary-bg-color: #333;
+$primary-text-color: #fff;
+$primary-button-color: #a8ff35;
+$primary-button-color-25: #a8ff3540;
+$cta-font: Paprika, system-ui;
+
+.main-section {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  // background-image: url(../../assets/backgrounds/Pexels\ Photo\ by\ Felix\ Mittermeier.png);
+}
+
+.main-group {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  margin: 130px auto 140px;
+}
+
+.title-group {
+  width: 694px;
+  margin: auto;
+  font-family: $font-stack;
+  .title {
+    text-transform: uppercase;
+    font-size: 72px;
+    margin: 0;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 64px;
+    margin: 0;
+  }
+  > p {
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px auto;
+  }
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  > button {
+    background-color: $primary-button-color;
+    padding: 18px 62px;
+    border-radius: 40px;
+    border: 0;
+    font-weight: bold;
+    &:hover {
+      filter: drop-shadow(0 0 25px $primary-button-color-25);
+      cursor: pointer;
+    }
+  }
+
+  &-arrow-group {
+    transform: translate(185px, -60px);
+    > .arrow {
+      transform: translate(-55px);
+      margin-bottom: -10px;
+    }
+    > .cta-phrase {
+      transform: translate(-10px, 10px) rotate(25deg);
+      line-height: 1.5rem;
+      font-family: $cta-font;
+      font-size: 14px;
+    }
+  }
+}
