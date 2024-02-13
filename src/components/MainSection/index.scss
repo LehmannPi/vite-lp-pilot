@@ -5,6 +5,8 @@ $primary-button-color: #a8ff35;
 $primary-button-color-25: #a8ff3540;
 $cta-font: Paprika, system-ui;
 
+$breakpoint-medium: 720px;
+
 .main-section {
   background-color: $primary-bg-color;
   color: $primary-text-color;
@@ -28,17 +30,39 @@ $cta-font: Paprika, system-ui;
     text-transform: uppercase;
     font-size: 72px;
     margin: 0;
+    // @media (max-width: $breakpoint-medium) {
+    //   font-size: 42px;
+    // }
   }
   .subtitle {
     font-weight: 400;
     font-size: 64px;
     margin: 0;
+    // @media (max-width: $breakpoint-medium) {
+    //   font-size: 32px;
+    // }
   }
   > p {
     font-family: $font-stack;
     font-weight: bold;
     font-size: 18px;
     margin: 30px auto;
+    // @media (max-width: $breakpoint-medium) {
+    //   font-size: 16px;
+    // }
+  }
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+    .title {
+      font-size: 42px;
+    }
+    .subtitle {
+      font-size: 34px;
+    }
+    p {
+      margin: 30px 18px;
+      font-size: 16px;
+    }
   }
 }
 
@@ -70,5 +94,10 @@ $cta-font: Paprika, system-ui;
       font-family: $cta-font;
       font-size: 14px;
     }
+  }
+}
+@media (max-width: $breakpoint-medium) {
+  h1 {
+    font-size: 42px;
   }
 }

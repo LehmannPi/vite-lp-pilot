@@ -1,4 +1,5 @@
 $header-font: 'Montserrat', sans-serif;
+$breakpoint-medium: 720px;
 
 .header-social {
   display: flex;
@@ -22,5 +23,16 @@ $header-font: 'Montserrat', sans-serif;
   > span {
     padding: 10px 20px;
     cursor: pointer;
+  }
+}
+@media (max-width: $breakpoint-medium) {
+  .header-central {
+    flex-wrap: wrap;
+  }
+  .header-social {
+    display: none;
+  }
+  .header-title {
+    display: none;
   }
 }

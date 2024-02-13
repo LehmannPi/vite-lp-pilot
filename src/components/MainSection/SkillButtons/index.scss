@@ -1,3 +1,5 @@
+$layout-breakpoint-cards-medium: 1120px;
+$layout-breakpoint-cards-small: 820px;
 $card-primary-color: #181818;
 
 .skill-group {
@@ -13,10 +15,32 @@ $card-primary-color: #181818;
   > svg:nth-child(3) {
     transform: translate(-80px);
   }
+}
 
-  // > div {
-  //   width: 350px;
-  //   height: 80px;
-  //   background-color: $card-primary-color;
-  // }
+@media (max-width: $layout-breakpoint-cards-medium) {
+  .skill-group {
+    width: $layout-breakpoint-cards-small;
+    > svg:nth-child(1) {
+      transform: translate(130px) scale(1.2);
+    }
+    > svg:nth-child(2) {
+      transform: translateY(70px) scale(1.2);
+    }
+    > svg:nth-child(3) {
+      transform: translate(-70px) scale(1.2);
+    }
+  }
+}
+@media (max-width: $layout-breakpoint-cards-small) {
+  .skill-group {
+    > svg:nth-child(1) {
+      display: none;
+    }
+    > svg:nth-child(2) {
+      display: none;
+    }
+    > svg:nth-child(3) {
+      display: none;
+    }
+  }
 }
