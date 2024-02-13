@@ -13,7 +13,7 @@ export default function ProgramCard({
 }: ProgramCardProps) {
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className="program-section-card">
         <h2>{title}</h2>
         <img src={imageSrc} alt={imageAlt} />
         <p>{description}</p>
