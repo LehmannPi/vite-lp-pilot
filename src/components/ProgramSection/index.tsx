@@ -5,7 +5,6 @@ import './index.scss';
 export default function ProgramSection() {
   return (
     <>
-      {/* <div className="program-section"> */}
       <div className="program-section">
         <h1>What awaits you?</h1>
         <div className="program-section-grid">
@@ -18,7 +17,6 @@ export default function ProgramSection() {
             />
           ))}
         </div>
-        {/* </div> */}
       </div>
     </>
   );
