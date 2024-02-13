@@ -1,0 +1,26 @@
+$header-font: 'Montserrat', sans-serif;
+
+.header-social {
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+  > svg {
+    margin-left: 10px;
+  }
+}
+
+.header-title {
+  font-family: $header-font;
+  font-size: 22px;
+  margin: 10px 0 0;
+}
+
+.header-central {
+  display: flex;
+  font-family: $header-font;
+  font-size: large;
+  > span {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
