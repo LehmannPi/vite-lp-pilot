@@ -1,0 +1,71 @@
+$font-stack: Montserrat, system-ui;
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 150px 80px;
+}
+
+.about-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  grid-column: 1/6;
+  > h1,
+  p {
+    font-family: $font-stack;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+  }
+  > h1 {
+    font-size: 72px;
+    font-weight: bold;
+  }
+  .about-group {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .about-topic {
+    display: flex;
+    gap: 10px;
+  }
+  .about-topic-group {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.about-section-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+}
+
+@media screen and (max-width: 425px) {
+  .about-section {
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+  }
+  .about-section-img {
+    display: none;
+  }
+}

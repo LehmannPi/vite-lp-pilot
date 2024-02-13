@@ -1,17 +1,18 @@
 import React from 'react';
 
 type Props = {
-  Icon?: typeof React.Component;
+  Icon?: React.ReactNode;
   title: string;
   description: string;
 };
 
 const AboutTopic = ({ description, Icon, title }: Props) => {
   return (
-    <div>
-      {Icon ? <Icon /> : null}
-      <div>
-        <p>{title}</p> <p> {description}</p>
+    <div className="about-topic">
+      {Icon}
+      <div className="about-topic-group">
+        <p className="about-topic-group-title">{title}</p>{' '}
+        <p className="about-topic-group-description"> {description}</p>
       </div>
     </div>
   );
