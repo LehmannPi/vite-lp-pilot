@@ -8,8 +8,9 @@ export default function ProgramSection() {
       <div className="program-section">
         <h1>What awaits you?</h1>
         <div className="program-section-grid">
-          {data.programCardsData.map((program) => (
+          {data.programCardsData.map((program, index) => (
             <ProgramCard
+              key={index}
               description={program.description}
               imageAlt={program.imageAlt}
               imageSrc={program.imageSrc}

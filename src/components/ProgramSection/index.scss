@@ -9,6 +9,7 @@ p {
 
 h1 {
   font-size: 72px;
+  text-align: center;
 }
 h2 {
   font-size: 36px;
@@ -54,9 +55,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 425px) {
-  .program-title-and-cards {
-    flex-direction: row;
-    gap: 40px;
+@media screen and (max-width: 1160px) {
+  .program-section-grid {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
