@@ -95,6 +95,9 @@ $breakpoint-medium: 720px;
       font-size: 14px;
     }
   }
+  @media (max-width: 520px) {
+    display: none;
+  }
 }
 @media (max-width: $breakpoint-medium) {
   h1 {
