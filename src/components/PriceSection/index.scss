@@ -1,0 +1,118 @@
+$font-stack: Montserrat, system-ui;
+$primary-color: #a8ff35;
+$primary-color-hover: #7de600;
+$media-breakpoint-large: 1160px;
+
+h1,
+h2,
+h3,
+h4,
+button,
+p {
+  font-family: $font-stack;
+  margin: 0;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+
+  padding-top: 122px;
+  padding-bottom: 122px;
+  text-align: center;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    // margin: auto;
+    gap: 40px;
+  }
+
+  > h1 {
+    font-size: 72px;
+    color: white;
+  }
+  @media (max-width: $media-breakpoint-large) {
+    margin: 60px;
+    > div {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 26px;
+  padding: 65px 32px;
+  justify-content: space-between;
+  &-main {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: black;
+    text-align: left;
+
+    > h3 {
+      font-size: 36px;
+    }
+    > h4 {
+      font-size: 18px;
+    }
+  }
+
+  &-value {
+    font-size: 64px;
+    font-weight: 500;
+  }
+
+  &-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 250px;
+    margin-bottom: 77px;
+    > div > .feature-text {
+      max-width: 220px;
+    }
+  }
+}
+
+.price-button {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 18px;
+  border: 0;
+  border-radius: 29px;
+  cursor: pointer;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}
+
+.price-globe {
+  position: absolute;
+  bottom: 37px;
+  left: 2%;
+}
+
+.price-lamp {
+  position: absolute;
+  top: 94px;
+  right: 0;
+  @media (min-width: $media-breakpoint-large) {
+    position: absolute;
+    right: 5%;
+  }
+}

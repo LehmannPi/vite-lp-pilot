@@ -1,3 +1,5 @@
+import { CheckIcon } from '../../common/icons/CheckIcon';
+
 type PriceCardProps = {
   title: string;
   subtitle: string;
@@ -12,21 +14,27 @@ export default function PriceCards({
   title,
 }: PriceCardProps) {
   return (
-    <>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className="price-card">
+      <div className="price-card-main">
         <h3>{title}</h3>
         <h4>{subtitle}</h4>
-        <p>{price}</p>
-        {features.length > 0 &&
-          features.map((feature, index) => {
-            return (
-              <div style={{ display: 'flex' }} key={index}>
-                <span>checkmark</span>
-                <p className="feature-text">{feature}</p>
-              </div>
-            );
-          })}
+        <div
+          style={{ height: '1px', width: 'full', backgroundColor: 'black' }}
+        />
+        <p className="price-card-value">{price}</p>
+        <div className="price-card-features">
+          {features.length > 0 &&
+            features.map((feature, index) => {
+              return (
+                <div style={{ display: 'flex', gap: '8px' }} key={index}>
+                  <CheckIcon />
+                  <p className="feature-text">{feature}</p>
+                </div>
+              );
+            })}
+        </div>
       </div>
-    </>
+      <button className="price-button">Buy now</button>
+    </div>
   );
 }
