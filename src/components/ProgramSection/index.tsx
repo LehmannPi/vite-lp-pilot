@@ -1,8 +1,12 @@
+import imgBroadcastUrl from '../../assets/program/Broadcasting audio from podcast studio.png';
+import imgMobileUrl from '../../assets/program/Mobile app development and mobile user interface.png';
+import imgKeyUrl from '../../assets/program/key.png';
 import data from './../../data/programData.json';
 import ProgramCard from './ProgramCard';
 import './index.scss';
 
 export default function ProgramSection() {
+  const imgSrcArray = [imgBroadcastUrl, imgKeyUrl, imgMobileUrl];
   return (
     <>
       <div className="program-section">
@@ -13,7 +17,7 @@ export default function ProgramSection() {
               key={index}
               description={program.description}
               imageAlt={program.imageAlt}
-              imageSrc={program.imageSrc}
+              imageSrc={imgSrcArray[index]}
               title={program.title}
             />
           ))}
