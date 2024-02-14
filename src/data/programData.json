@@ -1,0 +1,22 @@
+{
+  "programCardsData": [
+    {
+      "description": "Is an intensive program designed for those who dream of mastering video editing and graphic design skills.",
+      "imageAlt": "Broadcasting audio from podcast studio",
+      "imageSrc": "src/assets/program/Broadcasting audio from podcast studio.png",
+      "title": "For whom?"
+    },
+    {
+      "description": "This course offers participants a unique opportunity to immerse in a fascinating world of creativity.",
+      "imageAlt": "Big chromatic key",
+      "imageSrc": "src/assets/program/key.png",
+      "title": "What it gives"
+    },
+    {
+      "description": "You will create your own video projects and graphic compositions, combining various style and effects.",
+      "imageAlt": "Mobile app development and mobile user interface",
+      "imageSrc": "src/assets/program/Mobile app development and mobile user interface.png",
+      "title": "Experience"
+    }
+  ]
+}
