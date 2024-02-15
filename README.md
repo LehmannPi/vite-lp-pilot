@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+![Cover](./.github/cover.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Video Landing Page Project
 
-Currently, two official plugins are available:
+### React + TypeScript + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple landing page made with a design from figma using React, Vite, Typescript, SCSS and Jest for unit tests applying TDD
 
-## Expanding the ESLint configuration
+## Executing
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+After cloning the repository, access the project folder and execute the commands below:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Visit http://localhost:5173 to view the application.
+
+## Useful links
+
+- [How to setup Jest and React Testing Library in Vite project](https://zaferayan.medium.com/how-to-setup-jest-and-react-testing-library-in-vite-project-2600f2d04bdd)
+- [Query a button with specific text](https://stackoverflow.com/questions/58408178/query-a-button-with-specific-text)
+
+On solving token problem when creating typescript interfaces or types
+
+- [Jest encountered an unexpected token when working with React TypeScript](https://stackoverflow.com/questions/65717630/jest-encountered-an-unexpected-token-when-working-with-react-typescript)
+- [react-testing: userEvent.click does not work](https://stackoverflow.com/questions/73232927/react-testing-userevent-click-does-not-work)
+- [ts-jest](https://www.npmjs.com/package/ts-jest)
