@@ -19,6 +19,7 @@ export default function ContactSection() {
           gap: '40px',
           cursor: 'pointer',
           margin: '40px auto',
+          flexWrap: 'wrap',
         }}
       >
         <ColoredFB />

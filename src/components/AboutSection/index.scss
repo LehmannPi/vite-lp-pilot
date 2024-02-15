@@ -68,4 +68,16 @@ $font-stack: Montserrat, system-ui;
   .about-section-img {
     display: none;
   }
+  .about-container {
+    padding: 70px 20px;
+  }
+  .about-section-text {
+    grid-column: 1/13;
+    > p {
+      text-align: center;
+    }
+  }
+  .about-group {
+    justify-self: center;
+  }
 }

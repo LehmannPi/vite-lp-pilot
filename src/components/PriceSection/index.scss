@@ -105,14 +105,22 @@ p {
   position: absolute;
   bottom: 37px;
   left: 2%;
+  @media (max-width: 600px) {
+    transform: scale(0.7);
+    left: -30%;
+  }
 }
 
 .price-lamp {
   position: absolute;
   top: 94px;
   right: 0;
-  @media (min-width: $media-breakpoint-large) {
+  @media (max-width: $media-breakpoint-large) {
     position: absolute;
     right: 5%;
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.7);
+    right: -30%;
   }
 }
