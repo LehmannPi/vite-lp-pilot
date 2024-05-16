@@ -6,6 +6,10 @@
 
 A simple landing page made with a design from figma using React, Vite, Typescript, SCSS and Jest for unit tests applying TDD
 
+### Furture steps
+
+- Will have unit tests with Jest
+
 ## Executing
 
 After cloning the repository, access the project folder and execute the commands below:
